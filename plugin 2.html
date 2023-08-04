@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <title>plug in</title>
+    <style>
+      .layer_popup {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layer_popup">
+      <img src="images.jpg" alt="키티" />
+    </div>
+
+    <script>
+      $(function () {
+        $(".layer_popup").draggable();
+      });
+    </script>
+  </body>
+</html>
